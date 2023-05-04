@@ -4,6 +4,9 @@ Durvana theme is a simple theme that focuses on simplicity and minimality. It is
 # 🖼️Screenshot
 ![ScreenShot](screenshots/ss.png)
 
+# 👀Demo
+[Click here for demo](https://durvana.theindiandev.in/)
+
 # ✅TODO 
 - Way to change session while logging in
 - Way to change background easily
