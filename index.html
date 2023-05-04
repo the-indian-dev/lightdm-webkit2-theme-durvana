@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <div class="login">
+            <div class="greeting">
+                <span id="time-word">Welcome</span>!
+            </div>
+            <div class="time">
+                <span class="day" id="day">Friday</span>, <span class="date" id="date">August 15</span> <span class="year" id="year">1947</span>
+            </div>
+            <form action="POST" id="login" class="login-form">
+                <div class="login-info">Login at <input type="text" class="user" id="user" name="user" value="root" autocomplete="off"><strong>@</strong><span class="hostname" id="hostname">linux</span></div>
+                <br>
+                <input type="password" name="password" autocomplete="off" class="password" placeholder="Password">
+                <br>
+                <input type="submit" hidden />
+            </form>
+            <div class="power">
+                <img src="assets/power.svg" class="power-btn">
+                <div class="ctrl-btn">
+                    <button class="p-btn" id="shut" onclick="lightdm.shutdown()">Shut Down</button>
+                    <button class="p-btn" id="reboot" onclick="lightdm.restart()">Reboot</button>
+                    <button class="p-btn" id="suspend" onclick="lightdm.hibernate()">Suspend</button>
+                </div>
+            </div>
+        </div>
+
+          <script src="js/login.js"></script>
+          <script src="js/updater.js"></script>
+    </body>
+</html>

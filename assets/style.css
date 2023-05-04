@@ -1,0 +1,138 @@
+@import url('RobotoMono-Thin.ttf');
+
+.transition {
+  transition: all 0.4s ease-in-out;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body, html {
+  font-family: 'Roboto Mono', monospace;
+  background: url(bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+.login {
+    backdrop-filter: blur(10px) brightness(60%) contrast(90%);
+    width: 40vw;
+    height: 100vh;
+    text-align: left;
+    align-items: left;
+    color: white;
+  }
+
+.greeting {
+  font-size: 50px;
+  padding-top: 10vh;
+  padding-bottom: 1vh;
+  padding-left: 1%;
+  font-weight: 900;
+}
+
+.time {
+  padding-bottom: 5vh;
+  padding-left: 2%;
+  font-size: x-large;
+}
+
+.day{
+  font-weight: bold;
+}
+
+.login-info {
+  padding-top: 15vh;
+  padding-bottom: 2vh;
+  padding-left: 2%;
+  font-size: x-large;
+}
+
+.user {
+  font-family: inherit;
+  font-size: x-large;
+  border: none;
+  border-bottom: 2px solid grey;
+  border-radius: 2px;
+  outline: none;
+  background-color: transparent;
+  width: 30%;
+  transition: border-color 0.2s;
+  color: white;
+}
+
+.user:hover {
+  border-color:slategray;
+}
+
+.password {
+  font-family: inherit;
+  font-size: x-large;
+  border: none;
+  border-bottom: 2px solid grey;
+  border-radius: 2px;
+  outline: none;
+  background-color: transparent;
+  width: 50%;
+  margin-left: 2%;
+  transition: border-color 0.2s;
+  color: white;
+}
+
+.password:hover {
+  border-color:slategray;
+}
+
+.power {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 2%;
+}
+
+.power-btn{
+  filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(97deg) brightness(102%) contrast(103%);
+}
+
+.ctrl-btn{
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.power-btn:hover ~ .ctrl-btn{
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;;
+  display: flex;
+}
+
+.ctrl-btn:hover{
+  display: flex;
+}
+
+.p-btn{
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  width:30%;
+}
+
+

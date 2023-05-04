@@ -1,0 +1,5 @@
+[theme]
+name=durvana
+description=A simple minimal webkit lightdm theme
+engine=web-greeter
+url=index.html
