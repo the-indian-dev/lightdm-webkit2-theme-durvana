@@ -1,8 +1,9 @@
 # 🔱Durvana Theme
-Durvana theme is a simple theme that focuses on simplicity and minimality. It is still under development. It can also run on [nody-greeter](https://github.com/JezerM/nody-greeter/) or [web-greeter](https://github.com/JezerM/web-greeter).
+Durvana theme is a simple webkit-based lightDM theme that focuses on simplicity and minimality. It is still under development. It can also run on [nody-greeter](https://github.com/JezerM/nody-greeter/) or [web-greeter](https://github.com/JezerM/web-greeter).
 
 # 🖼️Screenshot
 ![ScreenShot](screenshots/ss.png)
+Wallpaper by [Nikhil Mishra](https://www.artstation.com/nikhilmishra_creations)
 
 # 👀Demo
 [Click here for demo](https://durvana.theindiandev.in/)
