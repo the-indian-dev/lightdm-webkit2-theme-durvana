@@ -30,7 +30,14 @@ body, html {
     text-align: left;
     align-items: left;
     color: white;
-  }
+}
+
+#auth-form {
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s ease-out;
+}
 
 .greeting {
   font-size: 50px;
@@ -97,42 +104,58 @@ body, html {
   bottom: 0;
   margin-bottom: 1%;
   margin-left: 2%;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
   padding-top: 2%;
 }
 
 .power-btn{
   filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(97deg) brightness(102%) contrast(103%);
+  cursor: pointer;
+}
+.power-btn:focus{
+  outline: 0;
 }
 
-.ctrl-btn{
-  display: none;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 70%;
-  padding-left: 5%;
-  padding-right: 5%;
+.power-options{
+    backdrop-filter: blur(10px) brightness(60%) contrast(90%);
+    width: 50vw;
+    height: 20vh;
+    position: absolute;
+    top: 37.5vh;
+    left: 25vw;
+    border-radius: 80px;
+    visibility: hidden;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s ease-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
 }
-
-.power-btn:hover ~ .ctrl-btn{
-  display: block;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;;
+.pwr-img {
+  height: 80%;
+  margin: 2;
+  margin-top: 5;
+  filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(97deg) brightness(102%) contrast(103%);
+}
+.pwr-btns {
+  border-radius: 80px;
+  height: 100%;
+  width: 33.33%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
 }
-
-.ctrl-btn:hover{
-  display: flex;
+.pwr-btns:focus {
+  outline: 0;
 }
-
-.p-btn{
-  border-radius: 10px;
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  width:30%;
+.pwr-txt {
+  font-size: x-large;
+  font-weight: lighter;
 }
-
-
+.pwr-btns:hover{
+  background-color: rgba(44, 44, 44, 0.479)
+}

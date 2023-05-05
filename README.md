@@ -5,6 +5,9 @@ Durvana theme is a simple webkit-based lightDM theme that focuses on simplicity 
 ![ScreenShot](screenshots/ss.png)
 Wallpaper by [Nikhil Mishra](https://www.artstation.com/nikhilmishra_creations)
 
+# ⚠️Warning
+**This project is under development**. Please slelect your session from the second-last line of ``login.js``. This will be fixed in future release. Use ``Ctrl``+``Alt``+``F4`` if something goes wrong to access your computer's terminal.
+
 # 👀Demo
 [Click here for demo](https://durvana.theindiandev.in/)
 
@@ -21,5 +24,5 @@ Wallpaper by [Nikhil Mishra](https://www.artstation.com/nikhilmishra_creations)
 
 # 🌟If you like this project
 Please consider staring this project, I am actively working on it and this motivates me.
-If you face any problem with this project please dont hesitate to create a new issue or [Contact me on Discord](https://discord.gg/qEYbuWu5NE)
+If you face any problem with this project please dont hesitate to create a new issue or [contact me on Discord](https://discord.gg/qEYbuWu5NE).
 Feel free to fork this project!

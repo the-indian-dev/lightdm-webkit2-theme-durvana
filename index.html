@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
-        <div class="login">
+        <div class="login" id="auth-form">
             <div class="greeting">
                 <span id="time-word">Good Morning</span>!
             </div>
@@ -19,17 +19,26 @@
                 <br>
                 <input type="submit" hidden />
             </form>
-            <div class="power">
-                <img src="assets/power.svg" class="power-btn">
-                <div class="ctrl-btn">
-                    <button class="p-btn" id="shut" onclick="lightdm.shutdown()">Shut Down</button>
-                    <button class="p-btn" id="reboot" onclick="lightdm.restart()">Reboot</button>
-                    <button class="p-btn" id="suspend" onclick="lightdm.hibernate()">Suspend</button>
-                </div>
+            <div class="power" tabindex="3">
+                <img src="assets/power.svg" class="power-btn" id="power-btn">
             </div>
         </div>
-
-          <script src="js/login.js"></script>
-          <script src="js/updater.js"></script>
+        <div class="power-options" id="power-options">
+            <div class="pwr-btns"  id="shutdown" tabindex="1" onclick="lightdm.shutdown()">
+                <img src="assets/power.svg" class="pwr-img">
+                <span class="pwr-txt">Shutdown</span>
+            </div>
+            <div class="pwr-btns" id="restart" tabindex="2" onclick="lightdm.restart()">
+                <img src="assets/restart.svg" class="pwr-img">
+                <span class="pwr-txt">Restart</span>
+            </div>
+            <div class="pwr-btns" id="suspend" tabindex="3" onclick="lightdm.suspend()">
+                <img src="assets/lock.svg" class="pwr-img">
+                <span class="pwr-txt">Suspend</span>
+            </div>
+        </div>
+            <script src="js/login.js"></script>
+            <script src="js/updater.js"></script>
+            <script src="js/power.js"></script>
     </body>
 </html>
