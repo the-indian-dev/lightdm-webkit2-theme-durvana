@@ -1,9 +1,5 @@
 @import url('RobotoMono-Thin.ttf');
 
-.transition {
-  transition: all 0.4s ease-in-out;
-}
-
 @-webkit-keyframes fadeIn {
   from { opacity: 0; }
     to { opacity: 1; }
@@ -21,6 +17,7 @@ body, html {
   -o-background-size: cover;
   background-size: cover;
   margin: 0;
+  transition: all 0.4s ease-in-out;
 }
 
 .login {
@@ -40,7 +37,7 @@ body, html {
 }
 
 .greeting {
-  font-size: 50px;
+  font-size: 10vh;
   padding-top: 10vh;
   padding-bottom: 1vh;
   padding-left: 1%;
@@ -50,7 +47,14 @@ body, html {
 .time {
   padding-bottom: 5vh;
   padding-left: 2%;
-  font-size: x-large;
+  font-size: 4vh;
+}
+
+#battery {
+  height: 4vh;
+  filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(97deg) brightness(102%) contrast(103%);
+  margin-left: 1vh;
+  display: inline-block;
 }
 
 .day{
@@ -61,12 +65,12 @@ body, html {
   padding-top: 15vh;
   padding-bottom: 2vh;
   padding-left: 2%;
-  font-size: x-large;
+  font-size: 3vh;
 }
 
 .user {
   font-family: inherit;
-  font-size: x-large;
+  font-size: 3vh;
   border: none;
   border-bottom: 2px solid grey;
   border-radius: 2px;
@@ -83,7 +87,7 @@ body, html {
 
 .password {
   font-family: inherit;
-  font-size: x-large;
+  font-size: 3vh;
   border: none;
   border-bottom: 2px solid grey;
   border-radius: 2px;
@@ -99,6 +103,19 @@ body, html {
   border-color:slategray;
 }
 
+.session-swt {
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+  padding-left: 2%;
+  font-size: 3vh;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.session-swt:hover {
+  color: slategray;
+}
+
 .power {
   position: absolute;
   bottom: 0;
@@ -111,8 +128,8 @@ body, html {
   filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(97deg) brightness(102%) contrast(103%);
   cursor: pointer;
 }
-.power-btn:focus{
-  outline: 0;
+.power-btn:hover{
+  filter: invert(49%) sepia(7%) saturate(851%) hue-rotate(169deg) brightness(100%) contrast(94%);
 }
 
 .power-options{
@@ -134,7 +151,7 @@ body, html {
     color: white;
 }
 .pwr-img {
-  height: 80%;
+  height: 75%;
   margin: 2;
   margin-top: 5;
   filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(97deg) brightness(102%) contrast(103%);
@@ -153,7 +170,7 @@ body, html {
   outline: 0;
 }
 .pwr-txt {
-  font-size: x-large;
+  font-size: 2vh;
   font-weight: lighter;
 }
 .pwr-btns:hover{

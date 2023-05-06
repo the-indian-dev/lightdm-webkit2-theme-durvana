@@ -14,3 +14,38 @@ document.getElementById('year').innerHTML=date.getFullYear()
 document.getElementById('day').innerHTML=weekday[date.getDay()]
 document.getElementById('user').value=lightdm.users[0].username
 
+
+const battery_icon = document.getElementById("battery")
+if (lightdm.can_access_battery == true) {
+    let level = lightdm.battery_data.level
+    let ac = lightdm.battery_data.ac_status
+    if (ac == true) {
+        battery_icon.src = "assets/battery-ac.svg"
+    }
+    else if (level <= 12.5){
+        battery_icon.src = "assets/battery-0.svg"
+    }
+    else if (level <= 25){
+        battery_icon.src = "assets/battery-1.svg"
+    }
+    else if (level <= 37.5){
+        battery_icon.src = "assets/battery-2.svg"
+    }
+    else if (level <= 50){
+        battery_icon.src = "assets/battery-3.svg"
+    }
+    else if (level <= 62.5){
+        battery_icon.src = "assets/battery-4.svg"
+    }
+    else if (level <= 75){
+        battery_icon.src = "assets/battery-5.svg"
+    }
+    else if (level <= 87.5){
+        battery_icon.src = "assets/battery-6.svg"
+    }
+    else if (level <= 100){
+        battery_icon.src = "assets/battery-7.svg"
+    }
+} else {
+    battery_icon.style.visibility = "hidden"
+}

@@ -4,20 +4,24 @@
         <title>Welcome</title>
         <link rel="stylesheet" href="assets/style.css">
     </head>
-    <body>
+    <body id="body">
         <div class="login" id="auth-form">
             <div class="greeting">
                 <span id="time-word">Good Morning</span>!
             </div>
             <div class="time">
                 <span class="day" id="day">Friday</span>, <span class="date" id="date">15 August</span> <span class="year" id="year">1947</span>
+                <img src="assets/battery-7.svg" id="battery">
             </div>
             <form action="POST" id="login" class="login-form">
                 <div class="login-info">Login at <input type="text" class="user" id="user" name="user" value="root" autocomplete="off"><strong>@</strong><span class="hostname" id="hostname">linux</span></div>
                 <br>
                 <input type="password" name="password" autocomplete="off" class="password" placeholder="Password">
                 <br>
-                <input type="submit" hidden />
+                <div class="session-swt">
+                    <span id="session" onclick="changeSession()">XFCE</span>
+                </div>
+                <input type="submit" hidden/>
             </form>
             <div class="power" tabindex="3">
                 <img src="assets/power.svg" class="power-btn" id="power-btn">
