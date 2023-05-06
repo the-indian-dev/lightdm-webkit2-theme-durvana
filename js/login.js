@@ -1,5 +1,10 @@
 // Session List Updater
-let sessions = lightdm.sessions
+let sessions = []
+try {
+  sessions = lightdm.sessions // For normal login
+} catch(error) { 
+  sessions = [{name : "XFCE"}, {name : "awesome"}, {name : "KDE"}, {name : "bspwm"}] // For demo
+}
 let num_ses = sessions.length
 let current_session = 0
 const session = document.getElementById("session")
